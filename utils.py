@@ -86,7 +86,7 @@ def login():
 def record_transaction(user_id):
     amount = float(input("Enter amount ("+RED+"please input number "+END+"):"))
     category = input("Enter category: ")
-    transaction_type = input("Enter type (income/expense): ")
+    transaction_type = input("Enter type (Income/Expense) 【MUST be Capital " + RED+"I or E"+END+" for income and expense】: ")
     date = input("Enter date (YYYY-MM-DD): ")
 
     # 将交易信息插入数据库
