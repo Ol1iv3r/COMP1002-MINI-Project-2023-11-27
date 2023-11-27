@@ -2,14 +2,11 @@
 
 import getpass
 import sqlite3
-import os
 import csv
 import matplotlib.pyplot as plt
 import pandas as pd
 import re
-from collections import defaultdict
-from datetime import datetime
-from prettytable import PrettyTable
+
 
 RED='\033[91m '
 GREEN='\033[92m'
@@ -18,11 +15,7 @@ PURPLE = '\033[95m'
 BLUE = '\033[94m'
 
          
-#I added a few try and except,,,then also changed here and there a bit.
-
-#for clearing screen (this won't clear information in database just screen)
-# def clear_screen():
-#     os.system('cls' if os.name == 'nt' else 'clear')
+ 
 # 创建数据库连接
 conn = sqlite3.connect('finance.db')
 cursor = conn.cursor()
