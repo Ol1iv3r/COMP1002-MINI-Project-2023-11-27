@@ -591,7 +591,6 @@ def main():
             n=int(input("choose the Optimize type:\n1️⃣  - Set your future "+PURPLE+"INCOME"+END+" goal 2️⃣  - See if this time u will overspend/below the average "+BLUE+"EXPENSE"+END+"\nChoose One Type:"))
             if n==1:optimizeandgoals(user_id)
             if n==2:optimize(get_transcations(user_id))
-            else: print(RED+"Wrong choices"+END)
             
         elif option == '5':
             # clear_screen()
